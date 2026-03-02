@@ -119,12 +119,9 @@ export default function Home() {
           <ScrollReveal delay={0.3}>
             <div className="mt-20">
               <div className="relative">
-                {/* Timeline line */}
-                <div className="absolute top-6 left-0 right-0 h-[1px] bg-gold/20 hidden lg:block" />
-
                 <div className="grid gap-12 lg:grid-cols-2 lg:gap-0">
                   {/* Phase I */}
-                  <div className="relative lg:pr-16">
+                  <div className="relative lg:pr-16 lg:border-r lg:border-gold/10">
                     <div className="mb-6 flex items-center gap-4">
                       <div className="flex h-12 w-12 items-center justify-center border border-gold/40 bg-surface-glass">
                         <span className="font-mono text-sm font-bold text-gold">I</span>
@@ -142,7 +139,7 @@ export default function Home() {
                   </div>
 
                   {/* Phase II */}
-                  <div className="relative lg:pl-16 lg:border-l lg:border-gold/20">
+                  <div className="relative lg:pl-16">
                     <div className="mb-6 flex items-center gap-4">
                       <div className="flex h-12 w-12 items-center justify-center border border-gold/40 bg-surface-glass">
                         <span className="font-mono text-sm font-bold text-gold">II</span>

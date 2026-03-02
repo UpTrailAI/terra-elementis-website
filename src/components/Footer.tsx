@@ -42,10 +42,8 @@ export function Footer() {
 
         <div className="flex flex-col gap-4 text-xs text-text-secondary lg:flex-row lg:items-center lg:justify-between">
           <p>
-            Confidential &mdash; The Aureus Company (Aureus Holdings (US), LLC)
-            &mdash; 2026
+            Confidential &mdash; Terra Elementis, Inc. &mdash; 2026
           </p>
-          <p>Terra Elementis Inc. (Delaware)</p>
         </div>
       </div>
     </footer>
