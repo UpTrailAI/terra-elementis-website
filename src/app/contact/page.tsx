@@ -2,8 +2,62 @@
 
 import { PageHero } from "@/components/PageHero";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    organization: "",
+    inquiryType: "",
+    message: "",
+  });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to submit inquiry");
+      }
+
+      setStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        organization: "",
+        inquiryType: "",
+        message: "",
+      });
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(error instanceof Error ? error.message : "Something went wrong");
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
   return (
     <>
       <PageHero
@@ -59,21 +113,21 @@ export default function ContactPage() {
 
             {/* Right side — 60% — Contact form */}
             <ScrollReveal delay={0.15} className="lg:w-3/5">
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-                className="flex flex-col gap-6"
-              >
+              <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <div>
                   <label htmlFor="contact-name" className="mb-2 block text-sm text-text-secondary">
                     Full Name
                   </label>
                   <input
                     id="contact-name"
+                    name="name"
                     type="text"
                     placeholder="Full name"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none disabled:opacity-50"
                   />
                 </div>
 
@@ -83,9 +137,14 @@ export default function ContactPage() {
                   </label>
                   <input
                     id="contact-email"
+                    name="email"
                     type="email"
                     placeholder="Email address"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none disabled:opacity-50"
                   />
                 </div>
 
@@ -95,9 +154,13 @@ export default function ContactPage() {
                   </label>
                   <input
                     id="contact-org"
+                    name="organization"
                     type="text"
                     placeholder="Company or institution"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none"
+                    value={formData.organization}
+                    onChange={handleChange}
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none disabled:opacity-50"
                   />
                 </div>
 
@@ -107,8 +170,12 @@ export default function ContactPage() {
                   </label>
                   <select
                     id="contact-type"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary focus:border-gold focus:outline-none"
-                    defaultValue=""
+                    name="inquiryType"
+                    value={formData.inquiryType}
+                    onChange={handleChange}
+                    required
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary focus:border-gold focus:outline-none disabled:opacity-50"
                   >
                     <option value="" disabled>
                       Select inquiry type
@@ -126,16 +193,34 @@ export default function ContactPage() {
                   </label>
                   <textarea
                     id="contact-message"
+                    name="message"
                     placeholder="Your message"
-                    className="min-h-[140px] w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    disabled={status === "loading"}
+                    className="min-h-[140px] w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none disabled:opacity-50"
                   />
                 </div>
 
+                {status === "error" && (
+                  <div className="border border-red-500/50 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+                    {errorMessage}
+                  </div>
+                )}
+
+                {status === "success" && (
+                  <div className="border border-gold/50 bg-gold/10 px-4 py-3 text-sm text-gold">
+                    Thank you! Your inquiry has been submitted successfully. We'll be in touch soon.
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="mt-2 w-full border border-gold bg-gold/10 py-4 font-medium text-gold transition-all duration-300 hover:bg-gold/20"
+                  disabled={status === "loading"}
+                  className="mt-2 w-full border border-gold bg-gold/10 py-4 font-medium text-gold transition-all duration-300 hover:bg-gold/20 disabled:cursor-not-allowed disabled:opacity-50"
                 >
-                  Submit Inquiry
+                  {status === "loading" ? "Submitting..." : "Submit Inquiry"}
                 </button>
               </form>
 
