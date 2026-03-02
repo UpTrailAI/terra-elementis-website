@@ -57,8 +57,9 @@ export const pageSeo: Record<string, PageSeo> = {
   },
 };
 
-export function buildOgUrl(title: string) {
-  return `${SITE_URL}/api/og?title=${encodeURIComponent(title)}`;
+export function buildOgUrl(_title: string) {
+  // Cloudflare Pages (next-on-pages) compatibility: use static OG image route
+  return `${SITE_URL}/opengraph-image`;
 }
 
 export function breadcrumbJsonLd(name: string, path: string) {
