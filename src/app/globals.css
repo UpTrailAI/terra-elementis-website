@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --navy-deep: #0A1628;
+  --charcoal: #141B2D;
+  --navy-mid: #1E2A3E;
+  --gold: #C5A55A;
+  --gold-light: #D4B96E;
+  --gold-muted: #8B7A3F;
+  --text-primary: #F0EDE6;
+  --text-secondary: #A0A0B0;
+  --steel-blue: #4A7FB5;
+  --success: #4A8B6E;
+  --surface-glass: rgba(255, 255, 255, 0.03);
+}
+
+@theme inline {
+  --color-navy-deep: var(--navy-deep);
+  --color-charcoal: var(--charcoal);
+  --color-navy-mid: var(--navy-mid);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-muted: var(--gold-muted);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-steel-blue: var(--steel-blue);
+  --color-success: var(--success);
+  --color-surface-glass: var(--surface-glass);
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-source-sans);
+  --font-mono: var(--font-jetbrains);
+}
+
+/* Grain texture overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+body {
+  background: var(--navy-deep);
+  color: var(--text-primary);
+  font-family: var(--font-source-sans), system-ui, sans-serif;
+}
+
+/* Gold horizontal rule divider */
+.gold-rule {
+  border: none;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.3;
+}
+
+/* Selection colour */
+::selection {
+  background: rgba(197, 165, 90, 0.3);
+  color: var(--text-primary);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy-mid);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-muted);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
