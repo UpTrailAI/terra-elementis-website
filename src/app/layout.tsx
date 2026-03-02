@@ -25,10 +25,62 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500", "700"],
 });
 
+const siteUrl = "https://terraelementis.com";
+const socialProfiles = [
+  process.env.NEXT_PUBLIC_LINKEDIN_URL,
+  process.env.NEXT_PUBLIC_X_URL,
+].filter(Boolean) as string[];
+
 export const metadata: Metadata = {
-  title: "Terra Elementis Inc. — Sovereign-Grade Critical Minerals Platform",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Terra Elementis Inc. — Sovereign-Grade Critical Minerals Platform",
+    template: "%s | Terra Elementis Inc.",
+  },
   description:
     "A public-market platform for critical minerals consolidation, certification, and industrialization aligned to U.S. strategic supply needs.",
+  keywords: [
+    "Terra Elementis",
+    "critical minerals",
+    "rare earth elements",
+    "mineral certification",
+    "supply chain security",
+    "U.S. critical supply chain",
+    "NI 43-101",
+    "SEC S-K 1300",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    title: "Terra Elementis Inc. — Sovereign-Grade Critical Minerals Platform",
+    description:
+      "A public-market platform for critical minerals consolidation, certification, and industrialization aligned to U.S. strategic supply needs.",
+    siteName: "Terra Elementis Inc.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Terra Elementis Inc.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terra Elementis Inc. — Sovereign-Grade Critical Minerals Platform",
+    description:
+      "A public-market platform for critical minerals consolidation, certification, and industrialization aligned to U.S. strategic supply needs.",
+    images: ["/twitter-image"],
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.svg",
+    shortcut: "/icon.svg",
+  },
+  category: "business",
 };
 
 export default function RootLayout({
@@ -36,11 +88,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Terra Elementis Inc.",
+    url: siteUrl,
+    logo: `${siteUrl}/icon.svg`,
+    description:
+      "Sovereign-grade critical minerals platform focused on consolidation, certification, and industrialization aligned to U.S. strategic supply needs.",
+    sameAs: socialProfiles,
+  };
+
   return (
     <html lang="en">
       <body
         className={`${playfair.variable} ${sourceSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Navigation />
         <main>{children}</main>
         <Footer />
