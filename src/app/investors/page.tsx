@@ -4,8 +4,66 @@ import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { CountUp } from "@/components/CountUp";
+import { useState } from "react";
 
 export default function InvestorsPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    organization: "",
+    category: "",
+  });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          organization: formData.organization,
+          inquiryType: formData.category,
+          message: "Request for investor information package",
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to submit request");
+      }
+
+      setStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        organization: "",
+        category: "",
+      });
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(error instanceof Error ? error.message : "Something went wrong");
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
   return (
     <>
       <PageHero
@@ -304,12 +362,7 @@ export default function InvestorsPage() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.15} className="lg:w-3/5">
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                }}
-                className="flex flex-col gap-6"
-              >
+              <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <h3 className="font-serif text-xl font-semibold text-text-primary">
                   Request Information
                 </h3>
@@ -320,9 +373,14 @@ export default function InvestorsPage() {
                   </label>
                   <input
                     id="inv-name"
+                    name="name"
                     type="text"
                     placeholder="Full name"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none disabled:opacity-50"
                   />
                 </div>
 
@@ -332,9 +390,14 @@ export default function InvestorsPage() {
                   </label>
                   <input
                     id="inv-email"
+                    name="email"
                     type="email"
                     placeholder="Email address"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none disabled:opacity-50"
                   />
                 </div>
 
@@ -344,9 +407,13 @@ export default function InvestorsPage() {
                   </label>
                   <input
                     id="inv-org"
+                    name="organization"
                     type="text"
                     placeholder="Company or institution"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none"
+                    value={formData.organization}
+                    onChange={handleChange}
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary placeholder-text-secondary/50 focus:border-gold focus:outline-none disabled:opacity-50"
                   />
                 </div>
 
@@ -356,8 +423,12 @@ export default function InvestorsPage() {
                   </label>
                   <select
                     id="inv-category"
-                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary focus:border-gold focus:outline-none"
-                    defaultValue=""
+                    name="category"
+                    value={formData.category}
+                    onChange={handleChange}
+                    required
+                    disabled={status === "loading"}
+                    className="w-full border border-navy-mid bg-surface-glass px-4 py-3 text-text-primary focus:border-gold focus:outline-none disabled:opacity-50"
                   >
                     <option value="" disabled>
                       Select category
@@ -368,11 +439,24 @@ export default function InvestorsPage() {
                   </select>
                 </div>
 
+                {status === "error" && (
+                  <div className="border border-red-500/50 bg-red-500/10 px-4 py-3 text-sm text-red-400">
+                    {errorMessage}
+                  </div>
+                )}
+
+                {status === "success" && (
+                  <div className="border border-gold/50 bg-gold/10 px-4 py-3 text-sm text-gold">
+                    Thank you! Your information request has been submitted. We'll send the investor package shortly.
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="mt-2 w-full border border-gold bg-gold/10 py-4 font-medium text-gold transition-all duration-300 hover:bg-gold/20"
+                  disabled={status === "loading"}
+                  className="mt-2 w-full border border-gold bg-gold/10 py-4 font-medium text-gold transition-all duration-300 hover:bg-gold/20 disabled:cursor-not-allowed disabled:opacity-50"
                 >
-                  Submit Request
+                  {status === "loading" ? "Submitting..." : "Submit Request"}
                 </button>
               </form>
             </ScrollReveal>
