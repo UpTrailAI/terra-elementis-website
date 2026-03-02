@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const WEBHOOK_URL =
-  "https://defaultb720c1d17d7443c8a7d3cec70ef22a.e9.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/641666ed9bac4d1cb24cf3501c8f44a2/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=rgBMgFMWLjTfEd3L8UdLEMkvgzzmIYACIszfJE5BMXk";
+  "https://alcnx.webhook.office.com/webhookb2/75afb798-d0d9-4604-8354-63235c7b7c94@b720c1d1-7d74-43c8-a7d3-cec70ef22ae9/IncomingWebhook/bf5708f577d84344bce43ef25d5ccf56/fb4aa683-e401-4c30-a2fe-f05c4571ed99/V2UBTJVPM9mDITe7d18NNiFECarLMpTEL6Y0-eo571Pqo1";
 
 export async function POST(request: NextRequest) {
   try {
@@ -26,20 +26,50 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Forward to Power Automate webhook
+    // Format for Teams Incoming Webhook (MessageCard)
+    const teamsMessage = {
+      "@type": "MessageCard",
+      "@context": "https://schema.org/extensions",
+      summary: "New Terra Elements Contact Form Submission",
+      themeColor: "D4AF37", // Gold
+      title: "🌍 New Contact Form Submission",
+      sections: [
+        {
+          activityTitle: name,
+          activitySubtitle: email,
+          facts: [
+            {
+              name: "Organization:",
+              value: organization || "Not provided",
+            },
+            {
+              name: "Inquiry Type:",
+              value: inquiryType,
+            },
+            {
+              name: "Message:",
+              value: message,
+            },
+            {
+              name: "Submitted:",
+              value: new Date().toLocaleString("en-US", {
+                timeZone: "Australia/Sydney",
+                dateStyle: "medium",
+                timeStyle: "short",
+              }),
+            },
+          ],
+        },
+      ],
+    };
+
+    // Forward to Teams webhook
     const webhookResponse = await fetch(WEBHOOK_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name,
-        email,
-        organization: organization || "Not provided",
-        inquiryType,
-        message,
-        submittedAt: new Date().toISOString(),
-      }),
+      body: JSON.stringify(teamsMessage),
     });
 
     if (!webhookResponse.ok) {
