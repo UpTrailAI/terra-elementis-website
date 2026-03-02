@@ -1,0 +1,16 @@
+<svg width="600px" height="120px" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+    <title>Terra Elementis Logo - Concept 3 (Monogram) - Horizontal</title>
+    <style>
+        .icon-gold { fill: #D4AF37; }
+        .text-navy { fill: #1E2A3A; font-family: 'Montserrat', 'Helvetica Neue', sans-serif; font-size: 36px; letter-spacing: 0.15em; font-weight: 500; }
+    </style>
+    
+    <!-- Icon: A sharp, geometric, faceted 'TE' monogram -->
+    <g id="icon" transform="translate(20, 10) scale(0.8)">
+        <path class="icon-gold" d="M10,20 L90,20 L90,35 L45,35 L45,90 L30,90 L30,35 L10,35 L10,20 Z" />
+        <path class="icon-gold" d="M55,45 L110,45 L110,60 L70,60 L70,90 L95,90 L95,105 L55,105 L55,45 Z" />
+    </g>
+
+    <!-- Wordmark -->
+    <text class="text-navy" x="150" y="78">TERRA ELEMENTIS</text>
+</svg>

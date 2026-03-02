@@ -42,7 +42,7 @@ export function Navigation() {
       <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-12">
         <Link href="/" className="group flex items-center gap-2.5">
           <img
-            src="/terra-symbol-earth.svg"
+            src="/terra-symbol.svg"
             alt="Terra Elementis symbol"
             className="mt-px h-8 w-8 opacity-95 sm:h-9 sm:w-9 lg:h-9 lg:w-9"
           />
