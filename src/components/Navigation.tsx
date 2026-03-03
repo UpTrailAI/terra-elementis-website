@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/assets", label: "Assets" },
   { href: "/technology", label: "Technology" },
   { href: "/governance", label: "Governance" },
+  { href: "/partners", label: "Partners" },
   { href: "/investors", label: "Investors" },
   { href: "/contact", label: "Contact" },
 ];

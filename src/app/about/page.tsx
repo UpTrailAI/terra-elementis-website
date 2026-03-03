@@ -30,7 +30,16 @@ export default function AboutPage() {
 
             <ScrollReveal delay={0.15} className="lg:w-3/5">
               <p className="text-lg leading-[1.7] text-text-secondary">
-                Terra Elementis Inc. (&ldquo;Terra&rdquo;) is a critical minerals platform being formed as a spin-out of rare earth mineral assets and related operations from The Aureus Company. Its purpose is to create a public-market scalable, technically defensible mineral platform that can consolidate, certify, and then industrialize strategically relevant rare earth and precious metal reserves.
+                Terra Elementis Inc. (&ldquo;Terra&rdquo;) is a critical minerals platform being formed as a spin-out of rare earth mineral assets and related operations from{" "}
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  The Aureus Company
+                </a>
+                . Its purpose is to create a public-market scalable, technically defensible mineral platform that can consolidate, certify, and then industrialize strategically relevant rare earth and precious metal reserves.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
                 The platform is anchored in disciplined governance, transparent reporting, and a mine-refine-supply pathway aligned to U.S. strategic supply needs. Terra Elementis Inc., incorporated in Delaware, serves as the contracting and surviving entity for all operations.
@@ -114,19 +123,60 @@ export default function AboutPage() {
                 Parent Entity
               </span>
               <h2 className="font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-                The Aureus Company
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-gold"
+                >
+                  The Aureus Company
+                </a>
               </h2>
               <p className="mt-6 text-base leading-[1.7] text-text-secondary">
-                Aureus Holdings (US), LLC
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  Aureus Holdings (US), LLC
+                </a>
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={0.15} className="lg:w-3/5">
               <p className="text-lg leading-[1.7] text-text-secondary">
-                Terra Elementis is the public-market vehicle and operating platform for the rare earth minerals and related operations spun out from The Aureus Company. The Aureus Company is the originating asset platform controlling the initial Arizona and Nevada claims, managing in-ground allocated gold reserve programs, and is expected to remain the controlling shareholder post-transaction with approximately 75% ownership.
+                Terra Elementis is the public-market vehicle and operating platform for the rare earth minerals and related operations spun out from{" "}
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  The Aureus Company
+                </a>
+                .{" "}
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  The Aureus Company
+                </a>{" "}
+                is the originating asset platform controlling the initial Arizona and Nevada claims, managing in-ground allocated gold reserve programs, and is expected to remain the controlling shareholder post-transaction with approximately 75% ownership.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Terra leverages The Aureus Company&apos;s reserve governance discipline, technical reporting architecture, and collateralization mindset while extending the platform to a mine-refine-supply execution pathway for rare earth elements and precious metals aligned to U.S. strategic supply priorities.
+                Terra leverages{" "}
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  The Aureus Company
+                </a>
+                &apos;s reserve governance discipline, technical reporting architecture, and collateralization mindset while extending the platform to a mine-refine-supply execution pathway for rare earth elements and precious metals aligned to U.S. strategic supply priorities.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
                 The spin-out structure is designed to provide a dedicated entity for ownership, production, refining, distribution, and government contracts for rare earth elements &mdash; a focused mandate that demands its own governance, disclosure discipline, and public-market identity.

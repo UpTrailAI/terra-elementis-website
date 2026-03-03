@@ -187,7 +187,16 @@ export default function Home() {
                   </h3>
                 </div>
                 <p className="text-lg leading-[1.7] text-text-secondary lg:w-2/3">
-                  Every reserve claim is governed by a Qualified Person under NI 43-101 (Canada) and SEC Regulation S-K 1300 (United States). Technical reports are prepared and signed off by Mark Slatten, Chief Geologist of Alchemy EcoMiners, ensuring institutional-grade disclosure discipline from day one. This is not aspirational &mdash; it is the minimum bar for public-market and government credibility.
+                  Every reserve claim is governed by a Qualified Person under NI 43-101 (Canada) and SEC Regulation S-K 1300 (United States). Technical reports are prepared and signed off by Mark Slatten, Chief Geologist of{" "}
+                  <a
+                    href="https://www.alchemynexis.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold transition-colors hover:text-gold-light"
+                  >
+                    Alchemy EcoMiners
+                  </a>
+                  , ensuring institutional-grade disclosure discipline from day one. This is not aspirational &mdash; it is the minimum bar for public-market and government credibility.
                 </p>
               </div>
             </ScrollReveal>
@@ -202,7 +211,16 @@ export default function Home() {
                   </h3>
                 </div>
                 <p className="text-lg leading-[1.7] text-text-secondary lg:w-2/3">
-                  MiDAS, provided by Alchemy Nexis, functions as Terra&apos;s mineral data and reporting backbone. It integrates geophysics, drone/satellite/LiDAR inputs, supports evidence assembly for NI 43-101 and S-K 1300 technical reporting, and provides the data/oracle layer for in-ground tokenized mineral assets and end-to-end chain-of-custody.
+                  MiDAS, provided by{" "}
+                  <a
+                    href="https://www.alchemynexis.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold transition-colors hover:text-gold-light"
+                  >
+                    Alchemy Nexis
+                  </a>
+                  , functions as Terra&apos;s mineral data and reporting backbone. It integrates geophysics, drone/satellite/LiDAR inputs, supports evidence assembly for NI 43-101 and S-K 1300 technical reporting, and provides the data/oracle layer for in-ground tokenized mineral assets and end-to-end chain-of-custody.
                 </p>
               </div>
             </ScrollReveal>
@@ -265,7 +283,16 @@ export default function Home() {
                   AZ + NV
                 </span>
                 <span className="text-base text-text-secondary">
-                  Arizona and Nevada initial footprint &mdash; claims already controlled by The Aureus Company, to be vended into Terra
+                  Arizona and Nevada initial footprint &mdash; claims already controlled by{" "}
+                  <a
+                    href="https://aureus.co/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gold transition-colors hover:text-gold-light"
+                  >
+                    The Aureus Company
+                  </a>
+                  , to be vended into Terra
                 </span>
               </div>
             </ScrollReveal>
@@ -315,7 +342,20 @@ export default function Home() {
               {
                 name: "Mark Slatten",
                 title: "Chief Geologist & Qualified Person",
-                desc: "150+ mineral resource and reserve reports produced, reviewed, or signed off. M.S. Geology (UCLA / UC Riverside). Chief Geologist of Alchemy EcoMiners.",
+                desc: (
+                  <>
+                    150+ mineral resource and reserve reports produced, reviewed, or signed off. M.S. Geology (UCLA / UC Riverside). Chief Geologist of{" "}
+                    <a
+                      href="https://www.alchemynexis.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gold transition-colors hover:text-gold-light"
+                    >
+                      Alchemy EcoMiners
+                    </a>
+                    .
+                  </>
+                ),
               },
             ].map((leader, i) => (
               <ScrollReveal key={leader.name} delay={i * 0.1}>
@@ -359,16 +399,50 @@ export default function Home() {
                 Parent Entity
               </span>
               <h2 className="font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-                The Aureus Company
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-gold"
+                >
+                  The Aureus Company
+                </a>
               </h2>
             </ScrollReveal>
 
             <ScrollReveal delay={0.15} className="lg:w-3/5">
               <p className="text-lg leading-[1.7] text-text-secondary">
-                Terra Elementis is being spun out of The Aureus Company to provide a dedicated structure for ownership, production, refining, distribution and government contracts for Rare Earth Elements. The Aureus Company is a consolidated group delivering reserve-backed capital solutions and sovereign-aligned monetary infrastructure anchored in certified gold reserves and related strategic minerals. It is expected to remain the majority and controlling shareholder post-transaction, retaining approximately 75% of Terra.
+                Terra Elementis is being spun out of{" "}
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  The Aureus Company
+                </a>{" "}
+                to provide a dedicated structure for ownership, production, refining, distribution and government contracts for Rare Earth Elements.{" "}
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  The Aureus Company
+                </a>{" "}
+                is a consolidated group delivering reserve-backed capital solutions and sovereign-aligned monetary infrastructure anchored in certified gold reserves and related strategic minerals. It is expected to remain the majority and controlling shareholder post-transaction, retaining approximately 75% of Terra.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Terra leverages The Aureus Company&apos;s reserve governance discipline, technical reporting architecture, and collateralization mindset while extending the platform to a mine-refine-supply execution pathway for rare earth elements and precious metals aligned to U.S. strategic supply priorities.
+                Terra leverages{" "}
+                <a
+                  href="https://aureus.co/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  The Aureus Company
+                </a>
+                &apos;s reserve governance discipline, technical reporting architecture, and collateralization mindset while extending the platform to a mine-refine-supply execution pathway for rare earth elements and precious metals aligned to U.S. strategic supply priorities.
               </p>
             </ScrollReveal>
           </div>

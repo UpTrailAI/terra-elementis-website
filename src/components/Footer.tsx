@@ -7,6 +7,7 @@ const footerLinks = [
   { href: "/assets", label: "Assets" },
   { href: "/technology", label: "Technology" },
   { href: "/governance", label: "Governance" },
+  { href: "/partners", label: "Partners" },
   { href: "/investors", label: "Investors" },
   { href: "/contact", label: "Contact" },
 ];
@@ -47,10 +48,21 @@ export function Footer() {
 
         <hr className="gold-rule my-12" />
 
-        <div className="flex flex-col gap-4 text-xs text-text-secondary lg:flex-row lg:items-center lg:justify-between">
-          <p>
-            Confidential &mdash; Terra Elementis, Inc. &mdash; 2026
-          </p>
+        <div className="flex flex-col gap-6 text-xs text-text-secondary lg:flex-row lg:items-start lg:justify-between">
+          <div className="flex flex-col gap-2">
+            <p className="font-medium text-text-primary">Terra Elementis, Inc.</p>
+            <address className="not-italic leading-relaxed">
+              300 Delaware Ave. Suite 210 #493<br />
+              Wilmington, DE 19801<br />
+              United States
+            </address>
+          </div>
+          
+          <div className="flex flex-col gap-2 lg:items-end lg:text-right">
+            <p>
+              Confidential &mdash; Terra Elementis, Inc. &mdash; 2026
+            </p>
+          </div>
         </div>
       </div>
     </footer>

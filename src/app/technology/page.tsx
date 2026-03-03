@@ -27,7 +27,25 @@ export default function TechnologyPage() {
                 Mineral Information Data Analysis System
               </h2>
               <p className="mt-8 text-lg leading-[1.7] text-text-secondary">
-                MiDAS is a SaaS platform delivered by Alchemy Nexis that serves as Terra&apos;s technical reporting and operational control backbone. It integrates Alchemy EcoMiners alongside third-party geophysics, drone, satellite, and LiDAR providers into a unified data environment &mdash; converting disparate technical inputs into defensible reporting outputs and operational audit trails.
+                MiDAS is a SaaS platform delivered by{" "}
+                <a
+                  href="https://www.alchemynexis.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  Alchemy Nexis
+                </a>{" "}
+                that serves as Terra&apos;s technical reporting and operational control backbone. It integrates{" "}
+                <a
+                  href="https://www.alchemynexis.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold transition-colors hover:text-gold-light"
+                >
+                  Alchemy EcoMiners
+                </a>{" "}
+                alongside third-party geophysics, drone, satellite, and LiDAR providers into a unified data environment &mdash; converting disparate technical inputs into defensible reporting outputs and operational audit trails.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
                 The platform is not a generic data warehouse. It is purpose-built for the mineral resource lifecycle &mdash; from initial data ingestion through reserve classification, technical report assembly, operational telemetry, and ultimately tokenization enablement for in-ground mineral assets.
