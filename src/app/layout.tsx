@@ -76,9 +76,14 @@ export const metadata: Metadata = {
     images: ["/twitter-image"],
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.svg",
-    shortcut: "/icon.svg",
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico",
   },
   category: "business",
 };
@@ -93,7 +98,7 @@ export default function RootLayout({
     "@type": "Organization",
     name: "Terra Elementis Inc.",
     url: siteUrl,
-    logo: `${siteUrl}/icon.svg`,
+    logo: `${siteUrl}/logo.png`,
     description:
       "Sovereign-grade critical minerals platform focused on consolidation, certification, and industrialization aligned to U.S. strategic supply needs.",
     sameAs: socialProfiles,
