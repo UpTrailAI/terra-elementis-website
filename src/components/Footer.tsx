@@ -16,13 +16,20 @@ export function Footer() {
     <footer className="border-t border-gold/10 bg-navy-deep">
       <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-12">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
-          <div className="flex flex-col gap-4">
-            <span className="font-serif text-xl font-bold tracking-wide text-text-primary">
-              TERRA ELEMENTIS
-            </span>
-            <span className="text-[10px] font-mono tracking-[0.3em] text-gold-muted uppercase">
-              Critical Minerals Platform
-            </span>
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.png"
+              alt="Terra Elementis symbol"
+              className="h-14 w-auto"
+            />
+            <div className="flex flex-col gap-1">
+              <span className="font-serif text-xl font-bold tracking-wide text-text-primary">
+                TERRA ELEMENTIS
+              </span>
+              <span className="text-[10px] font-mono tracking-[0.3em] text-gold-muted uppercase">
+                Critical Minerals Platform
+              </span>
+            </div>
           </div>
 
           <div className="flex flex-wrap gap-x-8 gap-y-3">

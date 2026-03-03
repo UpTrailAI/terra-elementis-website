@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Rich shiny gold gradient for upper hemisphere fill -->
+    <linearGradient id="goldFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F0D860"/>
+      <stop offset="25%" stop-color="#D4A830"/>
+      <stop offset="50%" stop-color="#E8C840"/>
+      <stop offset="75%" stop-color="#C49420"/>
+      <stop offset="100%" stop-color="#A07818"/>
+    </linearGradient>
+
+    <!-- Bright gold for highlights/shine -->
+    <radialGradient id="goldShine" cx="0.35" cy="0.3" r="0.65">
+      <stop offset="0%" stop-color="#FFE878"/>
+      <stop offset="40%" stop-color="#DDBA40"/>
+      <stop offset="100%" stop-color="#B08820"/>
+    </radialGradient>
+
+    <!-- Gold for grid lines -->
+    <linearGradient id="gridGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8A838"/>
+      <stop offset="100%" stop-color="#987020"/>
+    </linearGradient>
+
+    <!-- Gold outline gradient -->
+    <linearGradient id="outlineGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E0C050"/>
+      <stop offset="50%" stop-color="#C8A030"/>
+      <stop offset="100%" stop-color="#A08020"/>
+    </linearGradient>
+
+    <!-- Clip for upper hemisphere -->
+    <clipPath id="upperHemi">
+      <rect x="0" y="0" width="400" height="200"/>
+    </clipPath>
+
+    <!-- Clip for lower hemisphere -->
+    <clipPath id="lowerHemi">
+      <rect x="0" y="200" width="400" height="200"/>
+    </clipPath>
+
+    <!-- Globe circle clip -->
+    <clipPath id="globeClip">
+      <circle cx="200" cy="200" r="168"/>
+    </clipPath>
+  </defs>
+
+  <!-- ============== UPPER HEMISPHERE (filled gold) ============== -->
+  <g clip-path="url(#upperHemi)">
+    <!-- Gold filled upper half of globe -->
+    <circle cx="200" cy="200" r="168" fill="url(#goldShine)"/>
+
+    <!-- Continent shapes - simplified, clipped to globe -->
+    <g clip-path="url(#globeClip)" fill="none">
+
+      <!-- Grid lines on upper hemisphere - darker so continents show through -->
+      <!-- Longitude lines (vertical curves) -->
+      <path d="M200,32 Q200,200 200,368" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M120,48 Q100,200 120,352" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M280,48 Q300,200 280,352" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M60,90 Q30,200 60,310" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M340,90 Q370,200 340,310" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M160,38 Q148,200 160,362" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <path d="M240,38 Q252,200 240,362" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+      <!-- Latitude lines (horizontal curves) -->
+      <ellipse cx="200" cy="80" rx="160" ry="12" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <ellipse cx="200" cy="130" rx="168" ry="14" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <ellipse cx="200" cy="170" rx="168" ry="10" stroke="#B89828" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+      <!-- North America -->
+      <path d="M80,75 L90,65 L100,60 L115,58 L125,62 L140,58 L150,52 L155,56 L148,65 L140,72 L130,80 L118,90 L108,100 L100,115 L92,125 L88,120 L82,110 L78,100 L75,90 Z"
+            fill="#F5E070" opacity="0.6"/>
+      <!-- Greenland -->
+      <path d="M155,45 L165,40 L178,42 L182,48 L176,55 L165,56 L158,52 Z"
+            fill="#F5E070" opacity="0.55"/>
+
+      <!-- Europe -->
+      <path d="M220,58 L228,55 L238,56 L245,60 L250,68 L252,78 L248,85 L240,88 L235,92 L228,90 L222,84 L218,75 L216,65 Z"
+            fill="#F5E070" opacity="0.6"/>
+      <!-- UK/Ireland -->
+      <path d="M210,62 L214,58 L218,60 L216,66 L212,68 Z"
+            fill="#F5E070" opacity="0.55"/>
+
+      <!-- Africa (upper portion) -->
+      <path d="M235,100 L242,95 L250,96 L258,100 L265,110 L268,125 L270,140 L268,155 L262,168 L255,178 L245,185 L238,188 L232,182 L228,170 L226,155 L225,140 L228,125 L230,110 Z"
+            fill="#F5E070" opacity="0.6"/>
+
+      <!-- Asia/Middle East -->
+      <path d="M260,60 L275,55 L290,58 L305,62 L318,70 L325,80 L330,95 L328,108 L320,118 L308,125 L295,128 L280,125 L270,115 L265,105 L262,90 L258,78 L260,68 Z"
+            fill="#F5E070" opacity="0.6"/>
+      <!-- India -->
+      <path d="M290,130 L298,128 L305,135 L302,150 L295,162 L288,155 L285,142 Z"
+            fill="#F5E070" opacity="0.55"/>
+    </g>
+  </g>
+
+  <!-- ============== LOWER HEMISPHERE (outline only) ============== -->
+  <g clip-path="url(#lowerHemi)">
+    <g clip-path="url(#globeClip)">
+      <!-- Grid lines on lower hemisphere -->
+      <!-- Longitude lines -->
+      <path d="M200,32 Q200,200 200,368" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <path d="M120,48 Q100,200 120,352" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <path d="M280,48 Q300,200 280,352" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <path d="M60,90 Q30,200 60,310" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <path d="M340,90 Q370,200 340,310" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <path d="M160,38 Q148,200 160,362" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <path d="M240,38 Q252,200 240,362" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+
+      <!-- Latitude lines -->
+      <ellipse cx="200" cy="230" rx="168" ry="10" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <ellipse cx="200" cy="275" rx="160" ry="14" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <ellipse cx="200" cy="320" rx="140" ry="12" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+      <ellipse cx="200" cy="355" rx="80" ry="8" stroke="url(#gridGold)" stroke-width="0.8" fill="none" opacity="0.6"/>
+
+      <!-- South America silhouette -->
+      <path d="M175,205 L180,210 L185,218 L190,232 L192,248 L190,265 L185,280 L178,295 L172,310 L168,320 L170,328 L175,335 L172,340 L165,338 L160,330 L158,318 L162,300 L165,282 L168,260 L170,240 L172,225 L174,212 Z"
+            fill="url(#goldShine)" opacity="0.7"/>
+    </g>
+  </g>
+
+  <!-- Globe outline ring -->
+  <circle cx="200" cy="200" r="168" fill="none" stroke="url(#outlineGold)" stroke-width="1.8"/>
+
+  <!-- Equator line (slightly thicker for emphasis) -->
+  <line x1="32" y1="200" x2="368" y2="200" stroke="url(#outlineGold)" stroke-width="0.6" opacity="0.4"/>
+</svg>

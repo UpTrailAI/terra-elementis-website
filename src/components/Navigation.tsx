@@ -39,12 +39,16 @@ export function Navigation() {
           : "bg-transparent border-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 lg:px-12">
-        <Link href="/" className="group flex items-center gap-2.5">
+      <nav className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-3 lg:px-12">
+        <Link href="/" className="group flex items-center gap-3">
           <img
-            src="/terra-symbol-earth.svg"
+            src="/logo.png"
             alt="Terra Elementis symbol"
-            className="mt-px h-8 w-8 opacity-95 sm:h-9 sm:w-9 lg:h-9 lg:w-9"
+            className={`w-auto transition-all duration-500 ease-in-out ${
+              scrolled
+                ? "h-10 sm:h-11 lg:h-12"
+                : "h-14 sm:h-16 lg:h-[72px]"
+            }`}
           />
           <div className="flex flex-col leading-tight">
             <span className="font-serif text-lg font-bold tracking-wide text-text-primary sm:text-xl lg:text-2xl">
