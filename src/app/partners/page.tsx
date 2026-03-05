@@ -24,6 +24,14 @@ const partners = [
       "The Aureus Company is Terra's parent entity and controlling shareholder, delivering reserve-backed capital solutions and sovereign-aligned monetary infrastructure anchored in certified gold reserves and related strategic minerals. Aureus provides Terra with reserve governance discipline, technical reporting architecture, and collateralization expertise.",
     role: "Parent Company & Strategic Backer",
   },
+  {
+    name: "Decorus Imperium",
+    logo: "/decorus-imperium-logo.png",
+    url: "https://decorusimperium.com/",
+    description:
+      "Decorus Imperium serves as Terra's investment advisor and asset manager, providing strategic capital allocation, portfolio structuring, and institutional asset management expertise across Terra's mineral-backed investment vehicles.",
+    role: "Investment Advisor & Asset Manager",
+  },
 ];
 
 export default function PartnersPage() {
