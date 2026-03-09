@@ -29,8 +29,8 @@ const partners = [
     logo: "/decorus-imperium-logo.png",
     url: "https://decorusimperium.com/",
     description:
-      "Decorus Imperium serves as Terra's investment advisor and asset manager, providing strategic capital allocation, portfolio structuring, and institutional asset management expertise across Terra's mineral-backed investment vehicles.",
-    role: "Investment Advisor & Asset Manager",
+      "At the nexus of Silicon Valley innovation and Washington, D.C. strategy, Decorus Imperium operates as a private equity and advisory platform focused on the defense technology markets. Their core business combines private capital formation, strategic advisory, and bespoke consulting services, enabling partners to accelerate growth and scale with confidence. With deep experience guiding corporations, asset managers, and entrepreneurial ventures through complex investment landscapes, Decorus Imperium aligns people, ideas, and capital to deliver measurable outcomes in sectors vital to national security and technological superiority.",
+    role: "Private Equity & Strategic Advisory",
   },
 ];
 
