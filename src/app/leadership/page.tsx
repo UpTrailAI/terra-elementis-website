@@ -71,11 +71,30 @@ export default function LeadershipPage() {
                 In his dual role at Terra Elementis, Crouch serves as Interim CFO &mdash; establishing financial reporting frameworks, budgeting discipline, and capital controls &mdash; and as Chief Investment Officer, overseeing investment strategy and capital allocation across both the certify-first and industrialization phases of the platform.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Crouch also serves as Director of Government Affairs &mdash; Americas for The Aureus Company and Alchemy Nexis, where he advises U.S. congressional, executive branch, and defense stakeholders on supply chain resilience, tax policy, and strategic resource governance.
+                Crouch advises on key policy issues in Congress, both in the House and Senate, encompassing supply chain efficiency, tax policy refinement, and the sustainable management of natural resources. He collaborates with officials from the Department of Defense, the Department of Treasury, State Department, and the Department of Commerce on policy discussions vital to the nation&apos;s security and economic stability.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Prior to his current roles, Crouch founded and serves as CEO and CIO of Decorus Imperium, a global financial literacy organization operating in 36 countries.
+                His international investment banking experience includes collaboration with Trinary Capital on solar arrays and LNG refineries, advisory work on oil and natural gas solutions in Eastern Europe focused on national security and defensive supply chains, and partnerships with foreign governments in the Balkans and Southern Europe on the extraction and refinement of mineral resources.
               </p>
+              <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
+                Crouch founded and serves as CEO and Chief Investment Officer of Decorus Imperium, a private equity and advisory platform focused on the defense technology markets, combining private capital formation, strategic advisory, and bespoke consulting services. He also launched a global financial literacy organization at the age of fourteen, now active in 36 countries.
+              </p>
+
+              {/* Credentials block */}
+              <div className="mt-10 border-l border-gold/30 pl-8">
+                <div className="mb-6">
+                  <span className="font-mono text-xs tracking-wider text-gold-muted uppercase">Education</span>
+                  <p className="mt-1 text-base leading-[1.7] text-text-secondary">
+                    Yale Financial Markets (with honors)
+                  </p>
+                  <p className="mt-1 text-base leading-[1.7] text-text-secondary">
+                    Duke University Behavioral Economics
+                  </p>
+                  <p className="mt-1 text-base leading-[1.7] text-text-secondary">
+                    Masters in Finance &amp; Masters in Data, Economic Development, and Policy &mdash; MIT (in progress)
+                  </p>
+                </div>
+              </div>
             </ScrollReveal>
           </div>
         </div>
