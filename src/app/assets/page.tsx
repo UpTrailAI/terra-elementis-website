@@ -109,6 +109,15 @@ export default function AssetsPage() {
                   </h3>
                 </div>
                 <div className="lg:w-2/3">
+                  <div className="relative mb-6 aspect-[16/9] overflow-hidden">
+                    <img
+                      src="/images/arizona-property.jpg"
+                      alt="Arizona red rock landscape with geological formations"
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/40 to-transparent" />
+                  </div>
                   <p className="text-lg leading-[1.7] text-text-secondary">
                     Mineral claims in Arizona with identified rare earth and critical mineral deposits. Geological assessment, scanning, and data acquisition programs are underway to support QP-governed resource estimation under NI 43-101 and SEC S-K 1300.
                   </p>
@@ -127,6 +136,15 @@ export default function AssetsPage() {
                   </h3>
                 </div>
                 <div className="lg:w-2/3">
+                  <div className="relative mb-6 aspect-[16/9] overflow-hidden">
+                    <img
+                      src="/images/nevada-property.jpg"
+                      alt="Nevada desert landscape with mountain formations"
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/40 to-transparent" />
+                  </div>
                   <p className="text-lg leading-[1.7] text-text-secondary">
                     Mineral claims in Nevada targeting rare earth elements, critical minerals, gold and silver. Historical datasets and new scanning programs form the data foundation for Qualified Person review and classification.
                   </p>

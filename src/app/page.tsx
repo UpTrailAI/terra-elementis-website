@@ -17,9 +17,13 @@ export default function Home() {
           animate={{ scale: [1, 1.05] }}
           transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
         >
-          {/* REPLACE: Actual mine site photography */}
-          <div className="absolute inset-0 bg-gradient-to-br from-charcoal via-navy-deep to-navy-mid" />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(197,165,90,0.06),transparent_70%)]" />
+          <img
+            src="/images/hero-mine.jpg"
+            alt="Open pit mine in the American Southwest"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-navy-deep/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/40 to-transparent" />
         </motion.div>
 
         <div className="relative z-10 mx-auto max-w-[1400px] px-6 lg:px-12">
