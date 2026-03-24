@@ -1,11 +1,11 @@
 import { SITE_URL, buildOgUrl, breadcrumbJsonLd } from "@/lib/seo";
 
 export default function Head() {
-  const title = "Assets | Terra Elementis Inc.";
-  const description = "View Terra Elementis strategic mineral footprint in Arizona and Nevada, designed for certified reserves and disclosure discipline.";
+  const title = "Projects | Terra Elementis Inc.";
+  const description = "View Terra Elementis mineral projects in Arizona and Nevada, governed by QP-certified reserves and disclosure discipline.";
   const canonical = `${SITE_URL}/assets`;
-  const ogImage = buildOgUrl("Assets");
-  const breadcrumb = breadcrumbJsonLd("Assets", "/assets");
+  const ogImage = buildOgUrl("Projects");
+  const breadcrumb = breadcrumbJsonLd("Projects", "/assets");
   const webpageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",

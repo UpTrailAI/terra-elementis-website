@@ -4,10 +4,8 @@ const footerLinks = [
   { href: "/about", label: "About" },
   { href: "/leadership", label: "Leadership" },
   { href: "/strategy", label: "Strategy" },
-  { href: "/assets", label: "Assets" },
-  { href: "/technology", label: "Technology" },
+  { href: "/assets", label: "Projects" },
   { href: "/governance", label: "Governance" },
-  { href: "/partners", label: "Partners" },
   { href: "/investors", label: "Investors" },
   { href: "/contact", label: "Contact" },
 ];

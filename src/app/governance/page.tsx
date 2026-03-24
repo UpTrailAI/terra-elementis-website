@@ -145,7 +145,7 @@ export default function GovernancePage() {
                     <span className="ml-2 text-xs text-text-secondary">(United States)</span>
                   </div>
                   <p className="text-base leading-[1.7] text-text-secondary lg:w-2/3">
-                    SEC Regulation S-K Subpart 1300 &mdash; the U.S. disclosure standard for mining registrants. Aligns resource and reserve classification with Committee for Mineral Reserves International Reporting Standards (CRIRSCO). Required for NASDAQ listing.
+                    SEC Regulation S-K Subpart 1300 &mdash; the U.S. disclosure standard for mining registrants. Aligns resource and reserve classification with Committee for Mineral Reserves International Reporting Standards (CRIRSCO). Required for U.S. public-market listing.
                   </p>
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default function GovernancePage() {
                     </h3>
                     <span className="text-sm text-gold">Chief Geologist &amp; QP</span>
                     <p className="mt-1 text-xs text-text-secondary">
-                      Alchemy EcoMiners
+                      Maverick Eco-Miners, Inc.
                     </p>
                   </div>
                   <div className="lg:w-2/3">
@@ -230,7 +230,7 @@ export default function GovernancePage() {
                     "Mineral systems analysis and geological interpretation",
                     "Resource and reserve estimation under recognized frameworks",
                     "Technical report sign-off under NI 43-101 and SEC S-K 1300",
-                    "Integration into MiDAS evidence management workflows",
+                    "Integration into evidence management and reporting workflows",
                   ].map((item, i) => (
                     <div
                       key={i}
@@ -320,10 +320,10 @@ export default function GovernancePage() {
                 </p>
                 <div className="mt-6 border-t border-gold/10 pt-6">
                   <Link
-                    href="/technology"
+                    href="/strategy"
                     className="inline-flex items-center gap-2 text-sm font-medium text-gold transition-colors duration-300 hover:text-gold-light"
                   >
-                    MiDAS platform details
+                    Our approach
                     <span aria-hidden="true">&rarr;</span>
                   </Link>
                 </div>
@@ -372,7 +372,7 @@ export default function GovernancePage() {
                   </h3>
                 </div>
                 <p className="text-base leading-[1.7] text-text-secondary lg:w-3/5">
-                  Multiple major audit firms under review. The appointment of a recognized audit firm is a critical milestone in Terra&apos;s NASDAQ readiness timeline, ensuring financial reporting meets public-market standards.
+                  Multiple major audit firms under review. The appointment of a recognized audit firm is a critical governance milestone, ensuring financial reporting meets institutional standards.
                 </p>
               </div>
             </ScrollReveal>
@@ -397,7 +397,7 @@ export default function GovernancePage() {
       <hr className="gold-rule mx-auto max-w-[1400px]" />
 
       {/* ================================================================
-          SECTION 6: NASDAQ READINESS — Timeline-style
+          SECTION 6: COMPLIANCE READINESS — Timeline-style
       ================================================================ */}
       <section className="bg-charcoal py-32 lg:py-44">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
@@ -407,10 +407,10 @@ export default function GovernancePage() {
                 Public-Market Pathway
               </span>
               <h2 className="font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-                NASDAQ readiness gate.
+                Compliance readiness milestones.
               </h2>
               <p className="mt-8 text-lg leading-[1.7] text-text-secondary">
-                A structured 12&ndash;18 month pathway to NASDAQ listing readiness, with defined milestones across technical reporting, governance, operations, and disclosure.
+                A structured pathway to compliance readiness, with defined milestones across technical reporting, governance, operations, and disclosure.
               </p>
             </ScrollReveal>
 
@@ -423,7 +423,7 @@ export default function GovernancePage() {
                   {
                     title: "Technical Reporting Maturity",
                     detail:
-                      "NI 43-101 and S-K 1300 technical reports completed, QP-signed, and integrated into MiDAS evidence management. Disclosure-ready documentation for all mineral assets.",
+                      "NI 43-101 and S-K 1300 technical reports completed, QP-signed, and integrated into evidence management workflows. Disclosure-ready documentation for all mineral properties.",
                   },
                   {
                     title: "Governance Maturity",
@@ -433,7 +433,7 @@ export default function GovernancePage() {
                   {
                     title: "Operational Readiness",
                     detail:
-                      "Operator partnerships contracted under 50/50 model. DOE Title XVII loan application submitted with supporting technical documentation and project finance structure.",
+                      "Operator partnerships contracted. Supporting technical documentation and project finance structure assembled for financing applications.",
                   },
                   {
                     title: "Disclosure Discipline",

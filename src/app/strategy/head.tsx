@@ -2,7 +2,7 @@ import { SITE_URL, buildOgUrl, breadcrumbJsonLd } from "@/lib/seo";
 
 export default function Head() {
   const title = "Strategy | Terra Elementis Inc.";
-  const description = "Explore Terra Elementis' disciplined two-phase mine-refine-supply strategy for critical minerals and rare earth execution.";
+  const description = "Explore Terra Elementis' approach to acquiring, certifying, and developing critical mineral and rare earth properties.";
   const canonical = `${SITE_URL}/strategy`;
   const ogImage = buildOgUrl("Strategy");
   const breadcrumb = breadcrumbJsonLd("Strategy", "/strategy");

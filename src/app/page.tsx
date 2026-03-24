@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
-import { CountUp } from "@/components/CountUp";
 
 export default function Home() {
   return (
@@ -96,74 +95,35 @@ export default function Home() {
       <hr className="gold-rule mx-auto max-w-[1400px]" />
 
       {/* ================================================================
-          SECTION 3: WHAT WE'RE BUILDING — Terra thesis + Phase diagram
+          SECTION 3: WHAT WE DO — Simple company positioning
       ================================================================ */}
       <section className="bg-navy-deep py-32 lg:py-44">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <ScrollReveal>
             <span className="mb-4 block font-mono text-xs tracking-[0.3em] text-gold-muted uppercase">
-              The Terra Thesis
+              What We Do
             </span>
             <h2 className="max-w-3xl font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-              A public-market scalable, technically defensible mineral platform.
+              Acquiring, certifying, and developing critical mineral properties.
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.15}>
             <p className="mt-8 max-w-3xl text-lg leading-[1.7] text-text-secondary">
-              Capital markets and government stakeholders increasingly require verified reserves under recognized reporting frameworks, credible execution partners for mining and refining, and traceability from resource assessment through customer delivery. Terra is designed to meet these requirements through a disciplined two-phase strategy, supported by the MiDAS data and evidence platform as its technical reporting backbone.
+              Terra Elementis is a mining company focused on rare earth elements, critical minerals, gold and silver. We acquire mineral properties, certify what is in the ground through independent Qualified Person governance, and prepare those properties for production &mdash; working with experienced operators to bring resources from assessment through to supply.
             </p>
           </ScrollReveal>
 
-          {/* Two-phase horizontal timeline */}
           <ScrollReveal delay={0.3}>
-            <div className="mt-20">
-              <div className="relative">
-                <div className="grid gap-12 lg:grid-cols-2 lg:gap-0">
-                  {/* Phase I */}
-                  <div className="relative lg:pr-16 lg:border-r lg:border-gold/10">
-                    <div className="mb-6 flex items-center gap-4">
-                      <div className="flex h-12 w-12 items-center justify-center border border-gold/40 bg-surface-glass">
-                        <span className="font-mono text-sm font-bold text-gold">I</span>
-                      </div>
-                      <div>
-                        <span className="font-mono text-xs tracking-wider text-gold-muted uppercase">Phase I &mdash; 0&ndash;18 Months</span>
-                      </div>
-                    </div>
-                    <h3 className="mb-3 font-serif text-2xl font-semibold text-text-primary">
-                      Acquire, Hold, and Certify
-                    </h3>
-                    <p className="text-base leading-[1.7] text-text-secondary">
-                      Establish technical defensibility and public-market credibility. Onboard mineral assets, conduct QP-governed verification under NI 43-101 and SEC S-K 1300, integrate MiDAS evidence management, and build repeatable disclosure processes. Complete RTO, restructure, and operator partner shortlisting.
-                    </p>
-                  </div>
-
-                  {/* Phase II */}
-                  <div className="relative lg:pl-16">
-                    <div className="mb-6 flex items-center gap-4">
-                      <div className="flex h-12 w-12 items-center justify-center border border-gold/40 bg-surface-glass">
-                        <span className="font-mono text-sm font-bold text-gold">II</span>
-                      </div>
-                      <div>
-                        <span className="font-mono text-xs tracking-wider text-gold-muted uppercase">Phase II &mdash; 18&ndash;60 Months</span>
-                      </div>
-                    </div>
-                    <h3 className="mb-3 font-serif text-2xl font-semibold text-text-primary">
-                      Mine-Refine-Supply Execution
-                    </h3>
-                    <p className="text-base leading-[1.7] text-text-secondary">
-                      Activate DOE and project-level financing. Operator-run mining and refinery execution under contracts that preserve Terra&apos;s ownership position. Ramp to production, commission refinery, roll out tokenization and provenance, and begin revenue sweep. Supply waterfall: DOE, then DoD, then commercial buyers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p className="mt-6 max-w-3xl text-lg leading-[1.7] text-text-secondary">
+              Our initial footprint spans properties in Arizona and Nevada &mdash; two states with significant rare earth and critical mineral potential aligned to America&apos;s strategic supply needs.
+            </p>
           </ScrollReveal>
         </div>
       </section>
 
       {/* ================================================================
-          SECTION 4: THREE PILLARS — Staggered, NOT a 3-col card grid
+          SECTION 4: OUR FOCUS — Simplified pillars
       ================================================================ */}
       <section className="bg-charcoal py-32 lg:py-44">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
@@ -172,12 +132,12 @@ export default function Home() {
               Foundation
             </span>
             <h2 className="max-w-2xl font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-              Three pillars of institutional credibility.
+              Built on certified reserves, disciplined governance, and real properties.
             </h2>
           </ScrollReveal>
 
           <div className="mt-20 flex flex-col gap-0">
-            {/* Pillar 1 — Full width, left-heavy */}
+            {/* Pillar 1 — Certified Reserves */}
             <ScrollReveal delay={0.1}>
               <div className="flex flex-col border-t border-gold/15 py-14 lg:flex-row lg:items-start lg:gap-24">
                 <div className="mb-4 flex items-center gap-4 lg:mb-0 lg:w-1/3">
@@ -187,45 +147,27 @@ export default function Home() {
                   </h3>
                 </div>
                 <p className="text-lg leading-[1.7] text-text-secondary lg:w-2/3">
-                  Every reserve claim is governed by a Qualified Person under NI 43-101 (Canada) and SEC Regulation S-K 1300 (United States). Technical reports are prepared and signed off by Mark Slatten, Chief Geologist of{" "}
-                  <a
-                    href="https://www.alchemynexis.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gold transition-colors hover:text-gold-light"
-                  >
-                    Alchemy EcoMiners
-                  </a>
-                  , ensuring institutional-grade disclosure discipline from day one. This is not aspirational &mdash; it is the minimum bar for public-market and government credibility.
+                  Every reserve claim is governed by a Qualified Person under NI 43-101 (Canada) and SEC Regulation S-K 1300 (United States). Technical reports are prepared and signed off by our Chief Geologist, ensuring institutional-grade disclosure discipline from day one. This is not aspirational &mdash; it is the minimum bar for credibility.
                 </p>
               </div>
             </ScrollReveal>
 
-            {/* Pillar 2 */}
+            {/* Pillar 2 — Properties */}
             <ScrollReveal delay={0.15}>
               <div className="flex flex-col border-t border-gold/15 py-14 lg:flex-row lg:items-start lg:gap-24">
                 <div className="mb-4 flex items-center gap-4 lg:mb-0 lg:w-1/3">
                   <span className="font-mono text-5xl font-bold text-gold/30">02</span>
                   <h3 className="font-serif text-2xl font-semibold text-text-primary lg:text-3xl">
-                    Technology
+                    Properties
                   </h3>
                 </div>
                 <p className="text-lg leading-[1.7] text-text-secondary lg:w-2/3">
-                  MiDAS, provided by{" "}
-                  <a
-                    href="https://www.alchemynexis.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gold transition-colors hover:text-gold-light"
-                  >
-                    Alchemy Nexis
-                  </a>
-                  , functions as Terra&apos;s mineral data and reporting backbone. It integrates geophysics, drone/satellite/LiDAR inputs, supports evidence assembly for NI 43-101 and S-K 1300 technical reporting, and provides the data/oracle layer for in-ground tokenized mineral assets and end-to-end chain-of-custody.
+                  Our initial footprint covers mineral claims in Arizona and Nevada &mdash; regions with identified rare earth and critical mineral deposits. We integrate historical datasets, new scanning and mapping, geophysics, drone, satellite, and LiDAR inputs to build a comprehensive data foundation for resource estimation.
                 </p>
               </div>
             </ScrollReveal>
 
-            {/* Pillar 3 */}
+            {/* Pillar 3 — Governance */}
             <ScrollReveal delay={0.2}>
               <div className="flex flex-col border-t border-gold/15 border-b border-b-gold/15 py-14 lg:flex-row lg:items-start lg:gap-24">
                 <div className="mb-4 flex items-center gap-4 lg:mb-0 lg:w-1/3">
@@ -235,7 +177,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <p className="text-lg leading-[1.7] text-text-secondary lg:w-2/3">
-                  A five-member Board designed for public-market credibility: three independent directors spanning defense, government, critical minerals, and manufacturing supply chains, alongside two company nominees. Independent directors are under confidential negotiation with high-profile candidates. Disciplined disclosure controls, audit readiness, and governance transparency from formation.
+                  A five-member Board designed for credibility: three independent directors spanning defense, government, critical minerals, and manufacturing supply chains, alongside two company nominees. Disciplined disclosure controls, audit readiness, and governance transparency from formation.
                 </p>
               </div>
             </ScrollReveal>
@@ -244,24 +186,24 @@ export default function Home() {
       </section>
 
       {/* ================================================================
-          SECTION 5: BY THE NUMBERS — Full-width, large gold numbers
+          SECTION 5: AT A GLANCE — Minimal stats
       ================================================================ */}
       <section className="bg-navy-deep py-32 lg:py-44">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <ScrollReveal>
             <span className="mb-12 block font-mono text-xs tracking-[0.3em] text-gold-muted uppercase">
-              By the Numbers
+              At a Glance
             </span>
           </ScrollReveal>
 
-          <div className="grid gap-16 sm:grid-cols-2 lg:gap-y-20">
+          <div className="grid gap-16 sm:grid-cols-3">
             <ScrollReveal delay={0.1}>
               <div className="flex flex-col gap-3">
                 <span className="font-mono text-5xl font-bold text-gold lg:text-6xl">
-                  US$<CountUp end={100} className="font-mono" />B
+                  AZ + NV
                 </span>
                 <span className="text-base text-text-secondary">
-                  Reserve framework based on identified pipeline supported by pre-purchase NI 43-101 and SEC S-K 1300 compliant reporting
+                  Properties in Arizona and Nevada &mdash; regions with significant rare earth and critical mineral potential
                 </span>
               </div>
             </ScrollReveal>
@@ -269,10 +211,10 @@ export default function Home() {
             <ScrollReveal delay={0.2}>
               <div className="flex flex-col gap-3">
                 <span className="font-mono text-5xl font-bold text-gold lg:text-6xl">
-                  ~US$<CountUp end={750} className="font-mono" />M
+                  QP-Governed
                 </span>
                 <span className="text-base text-text-secondary">
-                  DOE integrated financing lane for mine-refine-supply program with application-ready documentation
+                  All reserve claims certified under NI 43-101 and SEC S-K 1300 reporting frameworks
                 </span>
               </div>
             </ScrollReveal>
@@ -280,30 +222,10 @@ export default function Home() {
             <ScrollReveal delay={0.3}>
               <div className="flex flex-col gap-3">
                 <span className="font-mono text-5xl font-bold text-gold lg:text-6xl">
-                  AZ + NV
+                  5-Member Board
                 </span>
                 <span className="text-base text-text-secondary">
-                  Arizona and Nevada initial footprint &mdash; claims already controlled by{" "}
-                  <a
-                    href="https://aureus.co/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gold transition-colors hover:text-gold-light"
-                  >
-                    The Aureus Company
-                  </a>
-                  , to be vended into Terra
-                </span>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.4}>
-              <div className="flex flex-col gap-3">
-                <span className="font-mono text-5xl font-bold text-gold lg:text-6xl">
-                  50/50
-                </span>
-                <span className="text-base text-text-secondary">
-                  Operator partnership model &mdash; Terra retains ownership and governance, experienced operators execute mining and refining
+                  Independent governance with directors spanning defense, government, and critical minerals
                 </span>
               </div>
             </ScrollReveal>
@@ -342,20 +264,7 @@ export default function Home() {
               {
                 name: "Mark Slatten",
                 title: "Chief Geologist & Qualified Person",
-                desc: (
-                  <>
-                    150+ mineral resource and reserve reports produced, reviewed, or signed off. M.S. Geology (UCLA / UC Riverside). Chief Geologist of{" "}
-                    <a
-                      href="https://www.alchemynexis.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gold transition-colors hover:text-gold-light"
-                    >
-                      Alchemy EcoMiners
-                    </a>
-                    .
-                  </>
-                ),
+                desc: "150+ mineral resource and reserve reports produced, reviewed, or signed off. M.S. Geology (UCLA / UC Riverside).",
               },
             ].map((leader, i) => (
               <ScrollReveal key={leader.name} delay={i * 0.1}>
@@ -389,86 +298,25 @@ export default function Home() {
       </section>
 
       {/* ================================================================
-          SECTION 7: THE AUREUS COMPANY — Parent entity context
+          SECTION 7: CTA — Inquiries
       ================================================================ */}
       <section className="bg-charcoal py-32 lg:py-44">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-          <div className="flex flex-col gap-12 lg:flex-row lg:gap-24">
-            <ScrollReveal className="lg:w-2/5">
-              <span className="mb-4 block font-mono text-xs tracking-[0.3em] text-gold-muted uppercase">
-                Parent Entity
-              </span>
-              <h2 className="font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors hover:text-gold"
-                >
-                  The Aureus Company
-                </a>
-              </h2>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.15} className="lg:w-3/5">
-              <p className="text-lg leading-[1.7] text-text-secondary">
-                Terra Elementis is being spun out of{" "}
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  The Aureus Company
-                </a>{" "}
-                to provide a dedicated structure for ownership, production, refining, distribution and government contracts for Rare Earth Elements.{" "}
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  The Aureus Company
-                </a>{" "}
-                is a consolidated group delivering reserve-backed capital solutions and sovereign-aligned monetary infrastructure anchored in certified gold reserves and related strategic minerals. It is expected to remain the majority and controlling shareholder post-transaction, retaining approximately 75% of Terra.
-              </p>
-              <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Terra leverages{" "}
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  The Aureus Company
-                </a>
-                &apos;s reserve governance discipline, technical reporting architecture, and collateralization mindset while extending the platform to a mine-refine-supply execution pathway for rare earth elements and precious metals aligned to U.S. strategic supply priorities.
-              </p>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      {/* ================================================================
-          SECTION 8: CTA — Investor inquiries and partnerships
-      ================================================================ */}
-      <section className="bg-navy-deep py-32 lg:py-44">
         <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
           <ScrollReveal>
             <div className="flex flex-col items-start gap-10 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <span className="mb-4 block font-mono text-xs tracking-[0.3em] text-gold-muted uppercase">
-                  Get Involved
+                  Get in Touch
                 </span>
                 <h2 className="font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-                  For investor inquiries and partnership opportunities.
+                  For investor inquiries and project information.
                 </h2>
               </div>
               <Link
-                href="/investors"
+                href="/contact"
                 className="inline-flex items-center gap-3 border border-gold bg-gold/10 px-8 py-4 font-medium text-gold transition-all duration-300 hover:bg-gold/20 hover:text-gold-light"
               >
-                Investor Relations
+                Contact Us
                 <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>

@@ -77,7 +77,7 @@ export default function LeadershipPage() {
                 His international investment banking experience includes collaboration with Trinary Capital on solar arrays and LNG refineries, advisory work on oil and natural gas solutions in Eastern Europe focused on national security and defensive supply chains, and partnerships with foreign governments in the Balkans and Southern Europe on the extraction and refinement of mineral resources.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Crouch founded and serves as CEO and Chief Investment Officer of Decorus Imperium, a private equity and advisory platform focused on the defense technology markets, combining private capital formation, strategic advisory, and bespoke consulting services. He also launched a global financial literacy organization at the age of fourteen, now active in 36 countries.
+                Crouch also founded a private equity and advisory platform focused on the defense technology markets, combining private capital formation, strategic advisory, and bespoke consulting services. He launched a global financial literacy organization at the age of fourteen, now active in 36 countries.
               </p>
 
               {/* Credentials block */}
@@ -116,7 +116,7 @@ export default function LeadershipPage() {
                 Mark Slatten
               </h2>
               <p className="mt-4 text-base leading-[1.7] text-text-secondary">
-                Alchemy EcoMiners
+                Maverick Eco-Miners, Inc.
               </p>
             </ScrollReveal>
 
@@ -125,7 +125,7 @@ export default function LeadershipPage() {
                 Mark Slatten provides oversight of geological exploration, data acquisition, and mineral systems analysis for Terra Elementis. His responsibilities include the supervision of Mineral Resource and Mineral Reserve estimation activities, and the review, validation, and sign-off of technical reports under NI 43-101 and SEC S-K 1300 reporting frameworks.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Slatten integrates traditional geological workflows with the MiDAS mineral data and analysis platform, ensuring that technical reporting is supported by a robust evidence management and chain-of-custody infrastructure from exploration through certification.
+                Slatten integrates traditional geological workflows with modern data management systems, ensuring that technical reporting is supported by robust evidence management and chain-of-custody infrastructure from exploration through certification.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
                 He also serves as CEO and Qualified Person of Maverick Eco-Miners, Inc. Over the course of his career, Slatten has produced, reviewed, or signed off on more than 150 mineral resource and reserve reports, and has read and interpreted thousands of resource and reserve estimates contributing to over US$30 billion in investment funding decisions.

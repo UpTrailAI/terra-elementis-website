@@ -34,7 +34,7 @@ export const pageSeo: Record<string, PageSeo> = {
   technology: {
     title: "Technology",
     description:
-      "MiDAS is Terra Elementis' evidence and oracle layer powering technical reporting, chain-of-custody, and operational controls.",
+      "Terra Elementis evidence management and operational controls powering technical reporting and chain-of-custody.",
     path: "/technology",
   },
   governance: {

@@ -10,7 +10,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Terra Elementis"
         title="Building America's Critical Minerals Future"
-        subtitle="A public-market scalable, technically defensible mineral platform designed to consolidate, certify, and industrialize strategically relevant rare earth and precious metal reserves."
+        subtitle="A technically defensible mineral platform designed to consolidate, certify, and develop strategically relevant rare earth and precious metal reserves."
       />
 
       {/* ================================================================
@@ -30,19 +30,10 @@ export default function AboutPage() {
 
             <ScrollReveal delay={0.15} className="lg:w-3/5">
               <p className="text-lg leading-[1.7] text-text-secondary">
-                Terra Elementis Inc. (&ldquo;Terra&rdquo;) is a critical minerals platform being formed as a spin-out of rare earth mineral assets and related operations from{" "}
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  The Aureus Company
-                </a>
-                . Its purpose is to create a public-market scalable, technically defensible mineral platform that can consolidate, certify, and then industrialize strategically relevant rare earth and precious metal reserves.
+                Terra Elementis Inc. (&ldquo;Terra&rdquo;) is a critical minerals company focused on rare earth elements, critical minerals, gold and silver, with properties in Arizona and Nevada. Our purpose is to create a technically defensible mineral platform that can consolidate, certify, and develop strategically relevant reserves aligned to U.S. supply needs.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                The platform is anchored in disciplined governance, transparent reporting, and a mine-refine-supply pathway aligned to U.S. strategic supply needs. Terra Elementis Inc., incorporated in Delaware, serves as the contracting and surviving entity for all operations.
+                The platform is anchored in disciplined governance, transparent reporting, and a pathway aligned to America&apos;s strategic supply requirements. Terra Elementis Inc., incorporated in Delaware, serves as the contracting entity for all operations.
               </p>
             </ScrollReveal>
           </div>
@@ -68,10 +59,10 @@ export default function AboutPage() {
           <div className="mt-16 flex flex-col gap-16 lg:flex-row lg:gap-24">
             <ScrollReveal delay={0.15} className="lg:w-3/5">
               <p className="text-lg leading-[1.7] text-text-secondary">
-                Capital markets and government stakeholders require three things that most early-stage mineral ventures fail to deliver: verified reserves under recognized reporting frameworks, credible execution partners for mining and refining, and traceability and chain-of-custody from resource assessment through customer delivery.
+                Capital markets and government stakeholders require three things that most early-stage mineral ventures fail to deliver: verified reserves under recognized reporting frameworks, credible execution partners for mining and refining, and traceability from resource assessment through customer delivery.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Terra is designed from formation to meet all three requirements simultaneously. This is not a speculative exploration play. It is a structured mineral platform with institutional-grade governance, QP-governed technical reporting under NI 43-101 and SEC S-K 1300, and a technology backbone that provides evidence management and provenance from ore body to end customer.
+                Terra is designed from formation to meet all three requirements simultaneously. This is not a speculative exploration play. It is a structured mineral platform with institutional-grade governance, QP-governed technical reporting under NI 43-101 and SEC S-K 1300, and end-to-end evidence management and provenance from ore body to end customer.
               </p>
             </ScrollReveal>
 
@@ -92,7 +83,7 @@ export default function AboutPage() {
                     Credible Execution
                   </h3>
                   <p className="mt-2 text-base leading-[1.7] text-text-secondary">
-                    Experienced operators for mining and refining through a 50/50 partnership model.
+                    Experienced operators for mining and refining under structured partnership agreements.
                   </p>
                 </div>
                 <div>
@@ -101,153 +92,8 @@ export default function AboutPage() {
                     Chain-of-Custody
                   </h3>
                   <p className="mt-2 text-base leading-[1.7] text-text-secondary">
-                    End-to-end traceability from resource assessment through customer delivery via MiDAS.
+                    End-to-end traceability from resource assessment through customer delivery.
                   </p>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      <hr className="gold-rule mx-auto max-w-[1400px]" />
-
-      {/* ================================================================
-          AUREUS RELATIONSHIP
-      ================================================================ */}
-      <section className="bg-navy-deep py-32 lg:py-44">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-          <div className="flex flex-col gap-16 lg:flex-row lg:gap-24">
-            <ScrollReveal className="lg:w-2/5">
-              <span className="mb-4 block font-mono text-xs tracking-[0.3em] text-gold-muted uppercase">
-                Parent Entity
-              </span>
-              <h2 className="font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors hover:text-gold"
-                >
-                  The Aureus Company
-                </a>
-              </h2>
-              <p className="mt-6 text-base leading-[1.7] text-text-secondary">
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  Aureus Holdings (US), LLC
-                </a>
-              </p>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.15} className="lg:w-3/5">
-              <p className="text-lg leading-[1.7] text-text-secondary">
-                Terra Elementis is the public-market vehicle and operating platform for the rare earth minerals and related operations spun out from{" "}
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  The Aureus Company
-                </a>
-                .{" "}
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  The Aureus Company
-                </a>{" "}
-                is the originating asset platform controlling the initial Arizona and Nevada claims, managing in-ground allocated gold reserve programs, and is expected to remain the controlling shareholder post-transaction with approximately 75% ownership.
-              </p>
-              <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                Terra leverages{" "}
-                <a
-                  href="https://aureus.co/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold transition-colors hover:text-gold-light"
-                >
-                  The Aureus Company
-                </a>
-                &apos;s reserve governance discipline, technical reporting architecture, and collateralization mindset while extending the platform to a mine-refine-supply execution pathway for rare earth elements and precious metals aligned to U.S. strategic supply priorities.
-              </p>
-              <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                The spin-out structure is designed to provide a dedicated entity for ownership, production, refining, distribution, and government contracts for rare earth elements &mdash; a focused mandate that demands its own governance, disclosure discipline, and public-market identity.
-              </p>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
-
-      <hr className="gold-rule mx-auto max-w-[1400px]" />
-
-      {/* ================================================================
-          CORPORATE STRUCTURE & PUBLIC-MARKET PATHWAY
-      ================================================================ */}
-      <section className="bg-charcoal py-32 lg:py-44">
-        <div className="mx-auto max-w-[1400px] px-6 lg:px-12">
-          <ScrollReveal>
-            <span className="mb-4 block font-mono text-xs tracking-[0.3em] text-gold-muted uppercase">
-              Corporate Structure
-            </span>
-            <h2 className="max-w-3xl font-serif text-3xl font-bold leading-tight text-text-primary lg:text-5xl">
-              Public-market pathway
-            </h2>
-          </ScrollReveal>
-
-          <div className="mt-20">
-            <ScrollReveal delay={0.15}>
-              <div className="flex flex-col gap-16 lg:flex-row lg:gap-24">
-                <div className="lg:w-3/5">
-                  <p className="text-lg leading-[1.7] text-text-secondary">
-                    Terra Elementis Inc. (Delaware) is the contracting and surviving entity structured for public-market listing through a disciplined, staged pathway. The listing strategy begins with a Canadian Reverse Takeover (RTO), followed by a post-closing restructure and reverse split, leading to NASDAQ readiness within 12&ndash;18 months.
-                  </p>
-                  <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                    This phased approach is designed to ensure that the entity entering public markets has fully operational governance, audited financials, NI 43-101 and S-K 1300 compliant technical reports, and the institutional credibility necessary for sustained public-market participation.
-                  </p>
-                </div>
-
-                <div className="lg:w-2/5">
-                  {/* Pathway stages */}
-                  <div className="relative border-l border-gold/30 pl-8">
-                    <div className="mb-10">
-                      <div className="absolute -left-[5px] h-[10px] w-[10px] border border-gold/60 bg-navy-deep" />
-                      <span className="font-mono text-xs tracking-wider text-gold-muted uppercase">Stage 1</span>
-                      <h3 className="mt-1 font-serif text-lg font-semibold text-text-primary">
-                        Canadian RTO
-                      </h3>
-                      <p className="mt-1 text-sm leading-[1.7] text-text-secondary">
-                        Initial public-market entry through reverse takeover on a Canadian exchange.
-                      </p>
-                    </div>
-                    <div className="mb-10">
-                      <div className="absolute -left-[5px] h-[10px] w-[10px] border border-gold/60 bg-navy-deep" />
-                      <span className="font-mono text-xs tracking-wider text-gold-muted uppercase">Stage 2</span>
-                      <h3 className="mt-1 font-serif text-lg font-semibold text-text-primary">
-                        Post-Closing Restructure
-                      </h3>
-                      <p className="mt-1 text-sm leading-[1.7] text-text-secondary">
-                        Share consolidation, governance finalization, and audit readiness.
-                      </p>
-                    </div>
-                    <div>
-                      <div className="absolute -left-[5px] h-[10px] w-[10px] border border-gold/60 bg-navy-deep" />
-                      <span className="font-mono text-xs tracking-wider text-gold-muted uppercase">Stage 3</span>
-                      <h3 className="mt-1 font-serif text-lg font-semibold text-text-primary">
-                        NASDAQ Readiness
-                      </h3>
-                      <p className="mt-1 text-sm leading-[1.7] text-text-secondary">
-                        Full compliance gate within 12&ndash;18 months of initial listing.
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </ScrollReveal>
@@ -274,10 +120,10 @@ export default function AboutPage() {
 
             <ScrollReveal delay={0.15} className="lg:w-3/5">
               <p className="text-lg leading-[1.7] text-text-secondary">
-                Terra Elementis envisions a modern, gold-anchored financial architecture providing immutable monetary infrastructure, system integrity, and transparency. The platform is designed to deliver verified, traceable, and institutionally governed mineral supply from American soil &mdash; serving the strategic requirements of the Department of Energy, Department of Defense, and commercial buyers who require provenance and compliance at every stage of the supply chain.
+                Terra Elementis is designed to deliver verified, traceable, and institutionally governed mineral supply from American soil &mdash; serving the strategic requirements of government agencies, defense procurement, and commercial buyers who require provenance and compliance at every stage of the supply chain.
               </p>
               <p className="mt-6 text-lg leading-[1.7] text-text-secondary">
-                This is not a speculative mineral play. Terra is a structured platform built to meet the moment: a sovereign-aligned, technically defensible, disclosure-disciplined mineral company designed for the capital markets, government agencies, and industrial partners who will define America&apos;s critical supply chain for the next generation.
+                This is not a speculative mineral play. Terra is a structured platform built to meet the moment: a sovereign-aligned, technically defensible, disclosure-disciplined mineral company designed for the institutions and industrial partners who will define America&apos;s critical supply chain for the next generation.
               </p>
             </ScrollReveal>
           </div>

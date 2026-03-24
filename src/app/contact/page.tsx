@@ -96,7 +96,7 @@ export default function ContactPage() {
                     Government &amp; Defense
                   </h3>
                   <p className="mt-2 text-base leading-[1.7] text-text-secondary">
-                    For DOE, DoD, and government procurement discussions related to critical mineral supply and strategic reserve programs.
+                    For government procurement discussions related to critical mineral supply and strategic reserve programs.
                   </p>
                 </div>
 
@@ -105,7 +105,7 @@ export default function ContactPage() {
                     Strategic Partnerships
                   </h3>
                   <p className="mt-2 text-base leading-[1.7] text-text-secondary">
-                    For mining operators, refinery operators, and technology partners interested in the 50/50 operator partnership model.
+                    For mining operators, refinery operators, and technology partners interested in operator partnership opportunities.
                   </p>
                 </div>
               </div>
